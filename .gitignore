@@ -137,3 +137,38 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# E-Commerce Specific
+/public/assets/              # Static assets (images, CSS, animations)
+/uploads/                    # User-uploaded content (products, avatars)
+/images/                     # Product images (if not in version control)
+/db.sqlite                   # Local database (if testing locally)
+/temp/
+
+# Claude Code
+.claude/                     
+.claude-cache/               
+.claude-logs/                
+*.claude-output              # AI-generated files
+
+# Secrets (already in your file)
+.env
+.env.example
+
+# AWS/Cloud secrets
+*.pem                        # SSL certificates
+*.key                        # Private keys
+Dockerfile*                  # If it includes secrets
+
+# Webpack/Parcel/Vite
+.cache/                      
+.parcel-cache/               
+dist/                        
+build/                       
+
+# TypeScript/JavaScript
+*.d.ts                       # Declaration files
+*.cjs                      
+*.mjs                       
+lib/                         # Built code (if not in dist/)
+
